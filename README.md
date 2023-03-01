@@ -1,6 +1,7 @@
 # 3DSlicer-Python
 Python automated 3D slicer pipeline to convert different image modalities to DL ready image data
 
+
 ## Table of contents
 * [Pre-processing](#pre-processing)
 * [Inputs](#inputs)
@@ -9,9 +10,11 @@ Python automated 3D slicer pipeline to convert different image modalities to DL 
 * [Dependencies](#dependencies)
 
 ## Pre-processing
-``#Put your Images here```  
+```#Put your Images here```  
 
-
+📂📜📦 [here](https://albumentations.ai/)
 📦**Processed**  
-  ┗ :file_folder:**Original**  
-&ensp; &ensp;    ┣ 📂Training  
+  ┗ 📂**Original**  
+&ensp; &ensp;    ┣ 📜Training  
+&ensp; &ensp;    ┣ 📜Training  
+&ensp; &ensp;    ┗ 📜Training  
