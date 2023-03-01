@@ -14,14 +14,26 @@ Python automated 3D slicer pipeline to convert different image modalities to DL 
 📂📜📦 
 
 📦**ParentDir**  
+```diff
+  ┗ Atlas.nrrd
+  ┗ ROI_Atlas.mrk.json
+``` 
   ┗ 📂**ImageModality1**  
 &ensp; &ensp;    ┣ 📜Case1.nii.gz  
 &ensp; &ensp;    ┣ 📜Case2.nii.gz   
 &ensp; &ensp;    ┗ 📜Case3.nii.gz   
+  ┗ 📂**ImageModality2**  
+&ensp; &ensp;    ┣ 📜Case1.nii.gz  
+&ensp; &ensp;    ┣ 📜Case2.nii.gz   
+&ensp; &ensp;    ┗ 📜Case3.nii.gz   
+  ┗ 📂**Mask1**  
+&ensp; &ensp;    ┣ 📜Case1.nii.gz  
+&ensp; &ensp;    ┣ 📜Case2.nii.gz   
+&ensp; &ensp;    ┗ 📜Case3.nii.gz  
 ## Running-code
 - Locate the python icon in your slicer GUI.
 ![Image1](Documentation/step1.png)
-- its should open up a python consol at the bottom of the screen
+- It should open up a python consol at the bottom of the screen like this,
 ![Image2](Documentation/step2.png)
 - Execute the python script using command : ``` exec(open(r"D:\folder1/folder2/slicer_python_processing_code.py").read()) ```
 
