@@ -20,8 +20,8 @@ Python automated 3D slicer pipeline to convert different image modalities to DL 
 &ensp; &ensp;    ┗ 📜Case3.nii.gz   
 ## Running-code
 
-![](https://github.com/munjalshah94/3DSlicer-Python/tree/main/Documentation/step1.png)
-![](https://github.com/munjalshah94/3DSlicer-Python/tree/main/Documentation/step2.png)
+![Image1](https://github.com/munjalshah94/3DSlicer-Python/tree/main/Documentation/step1.png)
+![Image1](https://github.com/munjalshah94/3DSlicer-Python/tree/main/Documentation/step2.png)
 
 
 ## Dependencies
