@@ -14,21 +14,24 @@ Python automated 3D slicer pipeline to convert different image modalities to DL 
 📂📜📦 
 
 📦**ParentDir**
-  ┗ 📂**Reference**
+  ┣  📂**Reference**
 &ensp; &ensp;    ┣ 📜Atlas.nrrd
-&ensp; &ensp;    ┣ 📜ROI_Atlas.mrk.json
-  ┗ 📂**ImageModality1**  
+&ensp; &ensp;    ┗ 📜ROI_Atlas.mrk.json
+  ┣  📂**ImageModality1**  
 &ensp; &ensp;    ┣ 📜Case1.nii.gz  
 &ensp; &ensp;    ┣ 📜Case2.nii.gz   
-&ensp; &ensp;    ┗ 📜Case3.nii.gz   
-  ┗ 📂**ImageModality2**  
-&ensp; &ensp;    ┣ 📜Case1.nii.gz  
-&ensp; &ensp;    ┣ 📜Case2.nii.gz   
-&ensp; &ensp;    ┗ 📜Case3.nii.gz   
-  ┗ 📂**Mask1**  
+&ensp; &ensp;    ┣ 📜Case3.nii.gz  
+&ensp; &ensp;    ┗ ...    
+  ┣ 📂**ImageModality2**  
 &ensp; &ensp;    ┣ 📜Case1.nii.gz  
 &ensp; &ensp;    ┣ 📜Case2.nii.gz   
 &ensp; &ensp;    ┗ 📜Case3.nii.gz  
+&ensp; &ensp;    ┗ ...    
+  ┗ 📂**Mask1**  
+&ensp; &ensp;    ┣ 📜Case1.nii.gz  
+&ensp; &ensp;    ┣ 📜Case2.nii.gz   
+&ensp; &ensp;    ┣ 📜Case3.nii.gz  
+&ensp; &ensp;    ┗ ...   
 ## Running-code
 - Locate the python icon in your slicer GUI.
 ![Image1](Documentation/step1.png)
