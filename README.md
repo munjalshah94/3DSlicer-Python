@@ -14,18 +14,18 @@ Python automated 3D slicer pipeline to convert different image modalities to DL 
 📂📜📦 
 
 📦**ParentDir**
-  ┗ 📂**Reference**
+┃ &nbsp;┗ 📂**Reference**
 &ensp; &ensp;    ┣ 📜Atlas.nrrd
 &ensp; &ensp;    ┣ 📜ROI_Atlas.mrk.json
-  ┗ 📂**ImageModality1**  
+┃&nbsp;┗ 📂**ImageModality1**  
 &ensp; &ensp;    ┣ 📜Case1.nii.gz  
 &ensp; &ensp;    ┣ 📜Case2.nii.gz   
 &ensp; &ensp;    ┗ 📜Case3.nii.gz   
-  ┗ 📂**ImageModality2**  
+┃ &nbsp;┗ 📂**ImageModality2**  
 &ensp; &ensp;    ┣ 📜Case1.nii.gz  
 &ensp; &ensp;    ┣ 📜Case2.nii.gz   
 &ensp; &ensp;    ┗ 📜Case3.nii.gz   
-  ┗ 📂**Mask1**  
+┃ &nbsp;┗ 📂**Mask1**  
 &ensp; &ensp;    ┣ 📜Case1.nii.gz  
 &ensp; &ensp;    ┣ 📜Case2.nii.gz   
 &ensp; &ensp;    ┗ 📜Case3.nii.gz  
