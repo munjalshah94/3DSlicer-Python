@@ -5,7 +5,7 @@ Python automated 3D slicer pipeline to convert different image modalities to DL 
 ## Table of contents
 
 * [Inputs](#inputs)
-* [Running-code] (#run-code)
+* [Running-code](#run-code)
 * [Dependencies](#dependencies)
 
 ## Inputs
