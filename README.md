@@ -13,8 +13,8 @@ Python automated 3D slicer pipeline to convert different image modalities to DL 
 
 📂📜📦 
 
-📦**ParentDir**  
-  ┗ 📂**Reference** 
+📦**ParentDir**
+  ┗ 📂**Reference**
 &ensp; &ensp;    ┣ 📜Atlas.nrrd
 &ensp; &ensp;    ┣ 📜ROI_Atlas.mrk.json
   ┗ 📂**ImageModality1**  
