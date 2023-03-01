@@ -13,5 +13,5 @@ Python automated 3D slicer pipeline to convert different image modalities to DL 
 
 
 📦**Processed**  
-  ┗ 📂**Original**  
+  ┗ :file_folder:**Original**  
 &ensp; &ensp;    ┣ 📂Training  
