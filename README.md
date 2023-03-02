@@ -27,7 +27,7 @@ The python code is tested on given formats: ```.nrrd, .nii, .nii.gz, .seg.nrrd `
   &ensp; &ensp; ┃ &nbsp;    ┣ 📜Modality1.nii.gz  
   &ensp; &ensp; ┃ &nbsp;    ┣ 📜Modality2.nii.gz  
   &ensp; &ensp; ┃ &nbsp;    ┣ 📜mask.seg.nrrd  
-  &ensp; &ensp; ┗ ...
+  &ensp; &ensp; ┗ ...                             
   ┣ 📂**ImageModality2_out**  
   &ensp; &ensp;    ┣ 📜Case1.nii.gz  
   &ensp; &ensp;    ┣ 📜Case2.nii.gz   
