@@ -18,6 +18,16 @@ The python code is tested on given formats: ```.nrrd, .nii, .nii.gz, .seg.nrrd `
   ┣ 📂**Reference**  
 &ensp; &ensp;    ┣ 📜*Atlas.nrrd*  
 &ensp; &ensp;    ┗ 📜*ROI_atlas.mrk.json*  
+  ┣ 📂**Original**  
+  &ensp; &ensp;    ┣ 📂case1 
+  &ensp; &ensp; ┃ &nbsp;    ┣ 📜Modality1.nii.gz  
+  &ensp; &ensp; ┃ &nbsp;    ┣ 📜Modality2.nii.gz  
+  &ensp; &ensp; ┃ &nbsp;    ┣ 📜mask.seg.nrrd  
+  &ensp; &ensp;    ┣ 📂case2 
+  &ensp; &ensp; ┃ &nbsp;    ┣ 📜Modality1.nii.gz  
+  &ensp; &ensp; ┃ &nbsp;    ┣ 📜Modality2.nii.gz  
+  &ensp; &ensp; ┃ &nbsp;    ┣ 📜mask.seg.nrrd  
+  &ensp; &ensp; ┗ ...
   ┣ 📂**ImageModality2_out**  
   &ensp; &ensp;    ┣ 📜Case1.nii.gz  
   &ensp; &ensp;    ┣ 📜Case2.nii.gz   
@@ -29,9 +39,9 @@ The python code is tested on given formats: ```.nrrd, .nii, .nii.gz, .seg.nrrd `
   &ensp; &ensp;    ┗ 📜Case3.nrrd  
   &ensp; &ensp;    ┗ ...    
   ┗ 📂**Mask_out**  
-  &ensp; &ensp;    ┣ 📜Case1.seg.nrrd  
-  &ensp; &ensp;    ┣ 📜Case2.seg.nrrd   
-  &ensp; &ensp;    ┣ 📜Case3.seg.nrrd  
+  &ensp; &ensp;    ┣ 📜Case1.nii  
+  &ensp; &ensp;    ┣ 📜Case2.nii   
+  &ensp; &ensp;    ┣ 📜Case3.nii  
   &ensp; &ensp;    ┗ ...   
 ## Running-code
 - Locate the python icon in your slicer GUI.
