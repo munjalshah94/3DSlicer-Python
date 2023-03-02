@@ -3,12 +3,19 @@ Python automated 3D slicer pipeline to convert different image modalities to DL 
 
 
 ## Table of contents
-
+* [Scripts](#scripts)
 * [Inputs](#inputs)
 * [Running-code](#run-code)
 * [Outputs](#outputs)
 * [Dependencies](#dependencies)
 * [Useful-links](#links)
+
+## Scripts
+The repository includes below mentioned python scripts for various image operations. 
+  - Crop Volume with a reference-ROI or volume-fit-ROI
+  - General Registration (BRAINS)
+  - Resample scalar volume
+  - N4ITK MRI Bias correction 
 
 ## Inputs
 The python code is tested on given formats: ```.nrrd, .nii, .nii.gz, .seg.nrrd ```. However, It should work on any volume node that can be imported via [```slicer.util.loadVolume```](https://slicer.readthedocs.io/en/v4.11/developer_guide/slicer.html?highlight=util.loadVolume#slicer.util.loadVolume). More information on python scripting commands can be found at [3D slicer Docs](https://slicer.readthedocs.io/en/v4.11/index.html). 
@@ -19,12 +26,12 @@ The python code is tested on given formats: ```.nrrd, .nii, .nii.gz, .seg.nrrd `
 &ensp; &ensp;    ┗ 📜*ROI_atlas.mrk.json*  
   ┣ 📂**Original**  
   &ensp; &ensp;    ┣ 📂case1                     
-  &ensp; &ensp; ┃ &nbsp;    ┣ 📜Modality1.nii.gz  
-  &ensp; &ensp; ┃ &nbsp;    ┣ 📜Modality2.nrrd  
+  &ensp; &ensp; ┃ &nbsp;    ┣ 📜ImageModality1.nii.gz  
+  &ensp; &ensp; ┃ &nbsp;    ┣ 📜ImageModality2.nrrd  
   &ensp; &ensp; ┃ &nbsp;    ┗ 📜mask.seg.nrrd  
   &ensp; &ensp;    ┣ 📂case2                     
-  &ensp; &ensp; ┃ &nbsp;    ┣ 📜Modality1.nii.gz  
-  &ensp; &ensp; ┃ &nbsp;    ┣ 📜Modality2.nrrd  
+  &ensp; &ensp; ┃ &nbsp;    ┣ 📜ImageModality1.nii.gz  
+  &ensp; &ensp; ┃ &nbsp;    ┣ 📜ImageModality2.nrrd  
   &ensp; &ensp; ┃ &nbsp;    ┗ 📜mask.seg.nrrd  
   &ensp; &ensp; ┗ ...                             
   
@@ -36,7 +43,8 @@ The python code is tested on given formats: ```.nrrd, .nii, .nii.gz, .seg.nrrd `
 
 ## Outputs
 - The code will output the image or mask with any extension supported by 3D slicer under [```slicer.util.saveNode```](https://slicer.readthedocs.io/en/latest/developer_guide/slicer.html#slicer.util.saveNode)
--
+- The outputs will be sorted based on image modalities provided by user in the config file. Output folders will be created based on image modalities inputs given by user.
+ 
 📦**Output Directory**          &emsp; &emsp;  
   ┣ 📂**ImageModality1_out**  
   &ensp; &ensp;    ┣ 📜Case1.nii.gz  
@@ -63,3 +71,5 @@ The python codes were tested and implemented on ```3D slicer 5.0.3 (r30893/7ea0f
 - [API](https://slicer.readthedocs.io/en/latest/developer_guide/slicer.html) ```slicer.util and slicer.logic``` are most frequently used for volume operations. 
 - [Script-repository](https://slicer.readthedocs.io/en/latest/developer_guide/script_repository.html)
 
+## Keywords
+3D Slicer, Python scripting, Region Of Interest (ROI), Volume cropping, Resample image, MRI Bias correction
