@@ -18,11 +18,12 @@ The repository includes below mentioned python scripts for various image operati
   - N4ITK MRI Bias Correction 
 
   Example scripts
-  ```
-      - 📜 Volume_registration_crop_atlas.py
-      - 📜 Fit_to_Volume_resample.py
-      - 📜 MRI_Bias_correction.py 
-  ```    
+  ```📜 Volume_registration_crop_atlas.py ```
+  Registration of volume using BRAINS algorithm. 
+  ![Image1](Documentation/Brainsfit_crop_resample.jpg)
+  ```📜 Fit_to_Volume_resample.py ```
+  ``` 📜 MRI_Bias_correction.py ```
+
 
 
 
