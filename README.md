@@ -10,25 +10,25 @@ Python automated 3D slicer pipeline to convert different image modalities to DL 
 * [Useful-links](#links)
 
 ## Inputs
-The python code is tested on given formats: ```.nrrd,.nii, .nii.gz, .seg.nrrd ```. But it should work on any volume node that slicer can inport via [```slicer.util.loadVolume```](https://slicer.readthedocs.io/en/v4.11/developer_guide/slicer.html?highlight=util.loadVolume#slicer.util.loadVolume). More infromation on python scripting commands on [3D slicer Docs](https://slicer.readthedocs.io/en/v4.11/index.html). 
+The python code is tested on given formats: ```.nrrd, .nii, .nii.gz, .seg.nrrd ```. However, It should work on any volume node that can be imported via [```slicer.util.loadVolume```](https://slicer.readthedocs.io/en/v4.11/developer_guide/slicer.html?highlight=util.loadVolume#slicer.util.loadVolume). More information on python scripting commands can be found at [3D slicer Docs](https://slicer.readthedocs.io/en/v4.11/index.html). 
 
-📂📜📦 
 
-📦**Parent Directory**          &emsp; &emsp;```#Put your Images here```  
-  ┗ 📂**Reference**  
+
+📦**Parent Directory**          &emsp; &emsp;  
+  ┣ 📂**Reference**  
 &ensp; &ensp;    ┣ 📜*Atlas.nrrd*  
 &ensp; &ensp;    ┗ 📜*ROI_atlas.mrk.json*  
-  ┗ 📂**ImageModality2**  
+  ┣ 📂**ImageModality2_out**  
   &ensp; &ensp;    ┣ 📜Case1.nii.gz  
   &ensp; &ensp;    ┣ 📜Case2.nii.gz   
   &ensp; &ensp;    ┗ 📜Case3.nii.gz  
   &ensp; &ensp;    ┗ ...  
-  ┣ 📂**ImageModality2**  
-  &ensp; &ensp;    ┣ 📜Case1.nii.gz  
-  &ensp; &ensp;    ┣ 📜Case2.nii.gz   
-  &ensp; &ensp;    ┗ 📜Case3.nii.gz  
+  ┣ 📂**ImageModality2_out**  
+  &ensp; &ensp;    ┣ 📜Case1.nrrd  
+  &ensp; &ensp;    ┣ 📜Case2.nrrd   
+  &ensp; &ensp;    ┗ 📜Case3.nrrd  
   &ensp; &ensp;    ┗ ...    
-  ┗ 📂**Mask**  
+  ┗ 📂**Mask_out**  
   &ensp; &ensp;    ┣ 📜Case1.seg.nrrd  
   &ensp; &ensp;    ┣ 📜Case2.seg.nrrd   
   &ensp; &ensp;    ┣ 📜Case3.seg.nrrd  
