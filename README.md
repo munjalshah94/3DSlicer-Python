@@ -17,12 +17,14 @@ The repository includes below mentioned python scripts for various image operati
   - Resample Scalar Volume
   - N4ITK MRI Bias Correction 
 
-  Example scripts
+  - Example scripts
   ```📜 Volume_registration_crop_atlas.py ```
-  - Registration of volume using BRAINS algorithm. The reference atlas used in the code can be found [here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7274757/) Firstly, a transformation matrix is calculated to map image onto Atlas. The inverse of transformation matrix is used to map ROI onto the image. The image is then resampled from voxel spacing of n1xn2xn3 to m1xm2xm3 and exported.   
+      Registration of volume using BRAINS algorithm. The reference atlas used in the code can be found [here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7274757/) Firstly, a transformation matrix is calculated to map image onto Atlas. The inverse of transformation matrix is used to map ROI onto the image. The image is then resampled from voxel spacing of n1xn2xn3 to m1xm2xm3 and exported.   
   ![Image1](Documentation/Brainsfit_crop_resample.png)
   ```📜 Fit_to_Volume_resample.py ```
+      
   ``` 📜 MRI_Bias_correction.py ```
+      
 
 
 
