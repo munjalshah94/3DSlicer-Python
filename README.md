@@ -14,8 +14,16 @@ Python automated 3D slicer pipeline to convert different image modalities to DL 
 The repository includes below mentioned python scripts for various image operations. 
   - Crop Volume with a reference-ROI or volume-fit-ROI
   - General Registration (BRAINS)
-  - Resample scalar volume
-  - N4ITK MRI Bias correction 
+  - Resample Scalar Volume
+  - N4ITK MRI Bias Correction 
+
+  Example scripts
+  ``` - 📜 Volume_registration_crop_atlas.py
+      - 📜 Fit_to_Volume_resample.py
+      - 📜 MRI_Bias_correction.py ```
+      
+
+
 
 ## Inputs
 The python code is tested on given formats: ```.nrrd, .nii, .nii.gz, .seg.nrrd ```. However, It should work on any volume node that can be imported via [```slicer.util.loadVolume```](https://slicer.readthedocs.io/en/v4.11/developer_guide/slicer.html?highlight=util.loadVolume#slicer.util.loadVolume). More information on python scripting commands can be found at [3D slicer Docs](https://slicer.readthedocs.io/en/v4.11/index.html). 
