@@ -27,7 +27,18 @@ The python code is tested on given formats: ```.nrrd, .nii, .nii.gz, .seg.nrrd `
   &ensp; &ensp; ┃ &nbsp;    ┣ 📜Modality2.nrrd  
   &ensp; &ensp; ┃ &nbsp;    ┗ 📜mask.seg.nrrd  
   &ensp; &ensp; ┗ ...                             
-  ┣ 📂**ImageModality2_out**  
+  
+## Running-code
+- Locate the python icon in your slicer GUI.
+- It should open up a python consol at the bottom of the screen.
+- Execute the python script using command : ``` exec(open(r"D:\folder1/folder2/slicer_python_processing_code.py").read()) ```
+![Image1](Documentation/step1.png)
+
+## Outputs
+- The code will output the image or mask with any extension supported by 3D slicer under [```slicer.util.saveNode```](https://slicer.readthedocs.io/en/latest/developer_guide/slicer.html#slicer.util.saveNode)
+-
+📦**Output Directory**          &emsp; &emsp;  
+  ┣ 📂**ImageModality1_out**  
   &ensp; &ensp;    ┣ 📜Case1.nii.gz  
   &ensp; &ensp;    ┣ 📜Case2.nii.gz   
   &ensp; &ensp;    ┣ 📜Case3.nii.gz  
@@ -41,16 +52,7 @@ The python code is tested on given formats: ```.nrrd, .nii, .nii.gz, .seg.nrrd `
   &ensp; &ensp;    ┣ 📜Case1.nii.gz  
   &ensp; &ensp;    ┣ 📜Case2.nii.gz   
   &ensp; &ensp;    ┣ 📜Case3.nii.gz  
-  &ensp; &ensp;    ┗ ...   
-## Running-code
-- Locate the python icon in your slicer GUI.
-- It should open up a python consol at the bottom of the screen.
-- Execute the python script using command : ``` exec(open(r"D:\folder1/folder2/slicer_python_processing_code.py").read()) ```
-![Image1](Documentation/step1.png)
-
-## Outputs
-- The code will output the image or mask with any extension supported by 3D slicer under [```slicer.util.saveNode```](https://slicer.readthedocs.io/en/latest/developer_guide/slicer.html#slicer.util.saveNode)
-
+  &ensp; &ensp;    ┗ ... 
 
 
 ## Dependencies
