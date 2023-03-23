@@ -85,6 +85,6 @@ The python codes were tested and implemented on ```3D slicer 5.0.3 (r30893/7ea0f
 - [API](https://slicer.readthedocs.io/en/latest/developer_guide/slicer.html) ```slicer.util and slicer.logic``` are most frequently used for volume operations. 
 - [Script-repository](https://slicer.readthedocs.io/en/latest/developer_guide/script_repository.html)
 ## How-to-cite
-- Patel, Tatsat, Munjal Shah, Sricharan S. Veeturi, Andre Monteiro, Adnan H. Siddiqui, and Vincent M. Tutino. "Effect of Inter-User Segmentation Differences on Ischemic Stroke Radiomics from CTA and NCCT." In 2022 IEEE Western New York Image and Signal Processing Workshop (WNYISPW), pp. 1-5. IEEE, 2022. [Link](https://ieeexplore.ieee.org/abstract/document/9983487).
+- Patel, Tatsat, Munjal Shah, Sricharan S. Veeturi, Andre Monteiro, Adnan H. Siddiqui, and Vincent M. Tutino. "Effect of Inter-User Segmentation Differences on Ischemic Stroke Radiomics from CTA and NCCT." In 2022 IEEE Western New York Image and Signal Processing Workshop (WNYISPW), pp. 1-5. IEEE, 2022. [Link](https://ieeexplore.ieee.org/abstract/document/9983487)
 ## Keywords
 3D Slicer, Python scripting, Region Of Interest (ROI), Volume cropping, Resample image, MRI Bias correction
