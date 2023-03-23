@@ -1,0 +1,41 @@
+{
+    "@schema": "https://raw.githubusercontent.com/slicer/slicer/master/Modules/Loadable/Markups/Resources/Schema/markups-schema-v1.0.3.json#",
+    "markups": [
+        {
+            "type": "ROI",
+            "coordinateSystem": "LPS",
+            "coordinateUnits": "mm",
+            "locked": false,
+            "fixedNumberOfControlPoints": false,
+            "labelFormat": "%N-%d",
+            "lastUsedControlPointNumber": 1,
+            "roiType": "Box",
+            "center": [0.37663981318473818, -0.32192713022232058, -20.200586318969728],
+            "orientation": [-1.0, -0.0, -0.0, -0.0, -1.0, -0.0, 0.0, 0.0, 1.0],
+            "size": [113.2269598045747, 72.71403508771921, 103.26606706640016],
+            "insideOut": false,
+            "controlPoints": [
+                {
+                    "id": "1",
+                    "label": "Crop Volume ROI-1",
+                    "description": "",
+                    "associatedNodeID": "",
+                    "position": [0.37663981318473818, -0.32192713022232058, -20.200586318969728],
+                    "orientation": [-1.0, -0.0, -0.0, -0.0, -1.0, -0.0, 0.0, 0.0, 1.0],
+                    "selected": true,
+                    "locked": false,
+                    "visibility": true,
+                    "positionStatus": "defined"
+                }
+            ],
+            "measurements": [
+                {
+                    "name": "volume",
+                    "enabled": false,
+                    "units": "cm3",
+                    "printFormat": "%-#4.4g%s"
+                }
+            ]
+        }
+    ]
+}
