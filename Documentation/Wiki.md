@@ -24,7 +24,7 @@ How to add custom ROI based on a reference volume?
         cropVolumeLogic.Apply(cropVolumeNode)
         slicer.util.saveNode(croppedvolume,OutVolumefilename)
 ```
-- How to crop segmentation without any information loss?
+- How to batch crop segmentations?
 
 	There are mutiple ways to crop volume as can be found here in implementaion of [CropVolumeLogic](https://github.com/Slicer/Slicer/blob/main/Modules/Loadable/CropVolume/Logic/vtkSlicerCropVolumeLogic.h).
 
