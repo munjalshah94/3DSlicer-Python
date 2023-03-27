@@ -4,8 +4,8 @@ Python automated 3D slicer pipeline to convert different image modalities to DL 
 
 ## Table of contents
 * [Scripts](#scripts)
-* [Inputs](#inputs)
 * [Running-code](#run-code)
+* [Inputs](#inputs)
 * [Outputs](#outputs)
 * [Dependencies](#dependencies)
 * [Useful-links](#links)
@@ -29,6 +29,11 @@ The repository includes below mentioned python scripts for various image operati
       
 
 
+## Running-code
+- Locate the python icon in your slicer GUI.
+- It should open up a python consol at the bottom of the screen.
+- Execute the python script using command : ``` exec(open(r"D:\folder1/folder2/slicer_python_processing_code.py").read()) ```
+![Image1](Documentation/step1.png)
 
 
 ## Inputs
@@ -49,12 +54,6 @@ The python code is tested on given formats: ```.nrrd, .nii, .nii.gz, .seg.nrrd `
   &ensp; &ensp; ┃ &nbsp;    ┗ 📜mask.seg.nrrd  
   &ensp; &ensp; ┗ ...                             
   
-## Running-code
-- Locate the python icon in your slicer GUI.
-- It should open up a python consol at the bottom of the screen.
-- Execute the python script using command : ``` exec(open(r"D:\folder1/folder2/slicer_python_processing_code.py").read()) ```
-![Image1](Documentation/step1.png)
-
 ## Outputs
 - The code will output the image or mask with any extension supported by 3D slicer under [```slicer.util.saveNode```](https://slicer.readthedocs.io/en/latest/developer_guide/slicer.html#slicer.util.saveNode)
 - The outputs will be sorted based on image modalities provided by user in the config file. Output folders will be created based on image modalities inputs given by user.
