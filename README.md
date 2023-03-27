@@ -14,9 +14,9 @@ Python automated 3D slicer pipeline to convert different image modalities to DL 
 
 ## Scripts
 The repository includes below mentioned python scripts for various image operations. 
-  - General Registration (BRAINS)
+  - BRAINSFit registration and crop using Brain Atlas
   - N4ITK MRI Bias Correction 
-  - More scipts coming soon!
+  - Register, resample, crop two image modalities
   - Additional scripts can be found at [Wiki and FAQs!](https://github.com/munjalshah94/3DSlicer-Python/blob/main/Documentation/Wiki.md)
  ### Example scripts
 📜 [Volume_registration_crop_atlas.py](https://github.com/munjalshah94/3DSlicer-Python/blob/main/Brainsfit_Atlas/Volume_registration_crop_atlas.py)
