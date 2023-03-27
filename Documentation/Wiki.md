@@ -42,7 +42,7 @@ How to add custom ROI based on a reference volume?
 	  CropVoxelBased(roi, inputVolume,outputNode,limitToInputExtent=true, fillValue=0.0) 
 	  ```
   
-  	- To crop with a interpolation algorithm
+  	- To crop with an interpolation algorithm
   ```   
   cropVolumeLogic3.CropInterpolated(roiNode, inputVolume, croppedvolume,False,1,1,0) 
   ```
