@@ -46,7 +46,7 @@ How to add custom ROI based on a reference volume?
   ```   
   cropVolumeLogic3.CropInterpolated(roiNode, inputVolume, croppedvolume,False,1,1,0) 
   ```
-		Where, inputs are defined as;
+	 Where, inputs are defined as;
 	  ```   
 	  CropInterpolated(roi,inputVolume,outputNode,isotropicResampling=False, spacingScale, interpolationMode,fillValue) 
 	  ```
