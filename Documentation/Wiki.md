@@ -2,10 +2,10 @@ How to add custom ROI based on a reference volume?
 - If the ROI is to be extracted based on a reference image and varies for each case, it can be changed in each looop using this snippet. 
 
 ```     referenceVolume=slicer.util.loadVolume(filename)  #put path of reference filename here .nrrd, .nii, or .nii.gz
-		inputVolume=slicer.util.loadVolume(inputfilename) #put path of input filename here .nrrd, .nii, or .nii.gz
-		OutVolumefilename= 'path/outfile.nii' #Define the path to output node/volume
+	inputVolume=slicer.util.loadVolume(inputfilename) #put path of input filename here .nrrd, .nii, or .nii.gz
+	OutVolumefilename= 'path/outfile.nii' #Define the path to output node/volume
 		
-		roiNode = slicer.mrmlScene.AddNewNodeByClass("vtkMRMLMarkupsROINode")
+	roiNode = slicer.mrmlScene.AddNewNodeByClass("vtkMRMLMarkupsROINode")
         cropVolumeParameters = slicer.mrmlScene.AddNewNodeByClass("vtkMRMLCropVolumeParametersNode")
         cropVolumeParameters.SetInputVolumeNodeID(referenceVolume.GetID())
         cropVolumeParameters.SetROINodeID(roiNode.GetID())
@@ -14,7 +14,7 @@ How to add custom ROI based on a reference volume?
         slicer.mrmlScene.RemoveNode(cropVolumeParameters)
 		
 		
-		croppedvolume = slicer.vtkMRMLScalarVolumeNode()
+	croppedvolume = slicer.vtkMRMLScalarVolumeNode()
         slicer.mrmlScene.AddNode(croppedvolume)
         cropVolumeLogic = slicer.modules.cropvolume.logic()
         cropVolumeNode = slicer.vtkMRMLCropVolumeParametersNode()
