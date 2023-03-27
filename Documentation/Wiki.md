@@ -23,3 +23,9 @@ How to add custom ROI based on a reference volume?
         cropVolumeNode.SetROINodeID(roiNode.GetID()) #Pass the ROI node created earlier
         cropVolumeLogic.Apply(cropVolumeNode)
         slicer.util.saveNode(croppedvolume,OutVolumefilename)
+
+- How to crop segmentation without any informaion loss?
+
+  ```      cropVolumeLogic3.CropVoxelBased(roiNode, orig3, croppedvolume3,'false',0.0)
+        cropVolumeLogic3.CropInterpolated(roiNode, orig3, croppedvolume3,False,1,1,0)
+        cropVolumeLogic3.Apply(cropVolumeNode3)
