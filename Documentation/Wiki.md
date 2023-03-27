@@ -27,28 +27,28 @@ How to add custom ROI based on a reference volume?
 - How to crop segmentation without any information loss?
 	There are mutiple ways to crop volume as can be found here in implementaion of [CropVolumeLogic](https://github.com/Slicer/Slicer/blob/main/Modules/Loadable/CropVolume/Logic/vtkSlicerCropVolumeLogic.h).
 
-	To crop input volume using the specified ROI node. Default interpolation algorithm is 'linear'
+	- To crop input volume using the specified ROI node. Default interpolation algorithm is 'linear'
   ```   
   cropVolumeNode.SetROINodeID(roiNode.GetID())   
   cropVolumeLogic3.Apply(croppedvolume) 
   ```
 	
-  	To perform non-interpolated (voxel-based) cropping.
+  	- To perform non-interpolated (voxel-based) cropping.
   ```  
   cropVolumeLogic3.CropVoxelBased(roiNode, inputVolume, croppedvolume,'false',0.0)
-  ```
-  	Where, inputs are defined as;
-  ```	
-  CropVoxelBased(roi, inputVolume,outputNode,limitToInputExtent=true, fillValue=0.0) 
-  ```
+	  ```
+		Where, inputs are defined as;
+	  ```	
+	  CropVoxelBased(roi, inputVolume,outputNode,limitToInputExtent=true, fillValue=0.0) 
+	  ```
   
-  	To crop with a interpolation algorithm
-  ```   
-  cropVolumeLogic3.CropInterpolated(roiNode, inputVolume, croppedvolume,False,1,1,0) 
-  ```
-  	Where, inputs are defined as;
-  ```   
-  CropInterpolated(roi,inputVolume,outputNode,isotropicResampling=False, spacingScale, interpolationMode,fillValue) 
-  ```
+  	- To crop with a interpolation algorithm
+	  ```   
+	  cropVolumeLogic3.CropInterpolated(roiNode, inputVolume, croppedvolume,False,1,1,0) 
+	  ```
+		Where, inputs are defined as;
+	  ```   
+	  CropInterpolated(roi,inputVolume,outputNode,isotropicResampling=False, spacingScale, interpolationMode,fillValue) 
+	  ```
 	
 
