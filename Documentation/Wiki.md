@@ -24,8 +24,21 @@ How to add custom ROI based on a reference volume?
         cropVolumeLogic.Apply(cropVolumeNode)
         slicer.util.saveNode(croppedvolume,OutVolumefilename)
 ```
-- How to crop segmentation without any informaion loss?
+- How to crop segmentation without any information loss?
+	There are mutiple ways to crop volume as can be found here in implementaion of [CropVolumeLogic](https://github.com/Slicer/Slicer/blob/main/Modules/Loadable/CropVolume/Logic/vtkSlicerCropVolumeLogic.h).
 
-  ```      cropVolumeLogic3.CropVoxelBased(roiNode, orig3, croppedvolume3,'false',0.0)
-        cropVolumeLogic3.CropInterpolated(roiNode, orig3, croppedvolume3,False,1,1,0)
-        cropVolumeLogic3.Apply(cropVolumeNode3)
+	To crop input volume using the specified ROI node. Default interpolation algorithm is 'linear'
+  ```   cropVolumeNode.SetROINodeID(roiNode.GetID())   
+  	cropVolumeLogic3.Apply(croppedvolume) ```
+	
+  	To perform non-interpolated (voxel-based) cropping.
+  ```   cropVolumeLogic3.CropVoxelBased(roiNode, inputVolume, croppedvolume,'false',0.0) ```
+  	Where, inputs are defined as;
+  ```	CropVoxelBased(roi, inputVolume,outputNode,limitToInputExtent=true, fillValue=0.0) ```
+  
+  	To crop with a interpolation algorithm
+  ```   cropVolumeLogic3.CropInterpolated(roiNode, inputVolume, croppedvolume,False,1,1,0) ```
+  	Where, inputs are defined as;
+  ```   CropInterpolated(roi,inputVolume,outputNode,isotropicResampling=False, spacingScale, interpolationMode,fillValue) ```
+	
+
