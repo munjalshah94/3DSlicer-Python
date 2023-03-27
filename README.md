@@ -25,7 +25,7 @@ The repository includes below mentioned python scripts for various image operati
   ![Image1](Documentation/Brainsfit_crop_resample.png)
   ```📜 Fit_to_Volume_resample.py ```
       
-  ``` 📜 MRI_Bias_correction.py ```
+  ``` 📜 N4ITKbias.py ```
       
 
 
