@@ -37,7 +37,7 @@ How to add custom ROI based on a reference volume?
   ```  
   cropVolumeLogic3.CropVoxelBased(roiNode, inputVolume, croppedvolume,'false',0.0)
   ```
-		Where, inputs are defined as;
+	 Where, inputs are defined as;
 	  ```	
 	  CropVoxelBased(roi, inputVolume,outputNode,limitToInputExtent=true, fillValue=0.0) 
 	  ```
