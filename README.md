@@ -23,7 +23,7 @@ The repository includes below mentioned python scripts for various image operati
 Registration of volume node ona reference Atlas image using BRAINSFit algorithm. The reference atlas used in the code can be found [here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7274757/). Firstly, a transformation matrix is calculated to map image onto Atlas. The inverse of transformation matrix is used to map ROI (extracted based on Atlas) onto the image. The image is cropped and resampled from voxel spacing of n1xn2xn3 to m1xm2xm3.  Options for BRAINSfit algorithm and resampling can be found at the beginning of the code.
   ![Image1](Documentation/Brainsfit_crop_resample.png)
   
-  ``` 📜 N4ITKbias.py ```
+📜 [N4ITKbias.py](https://github.com/munjalshah94/3DSlicer-Python/blob/main/N4ITKBias/N4ITKbias.py)
 
 Performs batch image bias correction using N4 algorithm. This module is based on the ITK filters.   
 
