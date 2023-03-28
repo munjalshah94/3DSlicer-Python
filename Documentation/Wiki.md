@@ -39,9 +39,9 @@ There are mutiple ways to crop volume as can be found here in implementaion of [
 ```
 - To perform non-interpolated (voxel-based) cropping.
 	
-
-cropVolumeLogic3.CropVoxelBased(roiNode, inputVolume, croppedvolume,'false',0.0)
-
+```python
+	cropVolumeLogic3.CropVoxelBased(roiNode, inputVolume, croppedvolume,'false',0.0)
+```
 
 Where, inputs are defined as;
 
