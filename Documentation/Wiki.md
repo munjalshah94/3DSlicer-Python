@@ -3,7 +3,7 @@
 ### How to add custom ROI based on a reference volume?
 - If the ROI is to be extracted based on a reference image and varies for each case, it can be changed in each loop using this snippet. 
 
-```
+```python
 	referenceVolume=slicer.util.loadVolume(filename)  #put path of reference filename here .nrrd, .nii, or .nii.gz
 	inputVolume=slicer.util.loadVolume(inputfilename) #put path of input filename here .nrrd, .nii, or .nii.gz
 	OutVolumefilename= 'path/outfile.nii' #Define the path to output node/volume
