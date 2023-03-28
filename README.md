@@ -28,6 +28,7 @@ Registration of volume node ona reference Atlas image using BRAINSFit algorithm.
 
 Performs batch image bias correction using N4 algorithm. This module is based on the ITK filters.   
 
+📜 [Resample_crop_Two_modalities_segmentations.py](https://github.com/munjalshah94/3DSlicer-Python/blob/main/Two_Modalities/Resample_crop_Two_modalities_segmentations.py)
 
 ## Running-code
 - Locate the python icon in your slicer GUI.
