@@ -24,14 +24,14 @@
         cropVolumeNode.SetOutputVolumeNodeID(croppedvolume.GetID())
         cropVolumeNode.SetROINodeID(roiNode.GetID()) #Pass the ROI node created earlier
         cropVolumeLogic.Apply(cropVolumeNode)
-        slicer.util.saveNode(croppedvolume,OutVolumefilename) ```
-
+        slicer.util.saveNode(croppedvolume,OutVolumefilename) 
+```
 ### How to crop segmentations?
 
 	There are mutiple ways to crop volume as can be found here in implementaion of [CropVolumeLogic](https://github.com/Slicer/Slicer/blob/main/Modules/Loadable/CropVolume/Logic/vtkSlicerCropVolumeLogic.h).
 
 	- To crop input volume using the specified ROI node. Default interpolation algorithm is 'linear'
-  ```   
+  ```
   cropVolumeNode.SetROINodeID(roiNode.GetID())   
   cropVolumeLogic3.Apply(croppedvolume) 
   ```
