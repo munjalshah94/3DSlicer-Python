@@ -41,11 +41,11 @@ wienerFilterNoise=0.00
 nHistogramBins=0
 
 
-# exec(open(r"D:\Github_Data\test/N4ITKbias.py").read())     
+# exec(open(r"path_to_code\N4ITKbias.py").read())     
 
 def BatchRegister2():
-    folder_names = glob.glob(r'D:\Github_Data\test\MRA\*')
-    current_folder= r'D:\Github_Data/test'
+    folder_names = glob.glob(r'path_to_code\MRA\*')
+    current_folder= r'path_to_code\'
     
     output_folder= current_folder+'/output'
     isExist = os.path.exists(output_folder)
