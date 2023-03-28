@@ -21,7 +21,7 @@ The repository includes below mentioned python scripts for various image operati
  ### Example scripts
 📜 [Volume_registration_crop_atlas.py](https://github.com/munjalshah94/3DSlicer-Python/blob/main/Brainsfit_Atlas/Volume_registration_crop_atlas.py)
 
-Registration of volume node ona reference Atlas image using BRAINSFit algorithm. The reference atlas used in the code can be found [here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7274757/). Firstly, a transformation matrix is calculated to map image onto Atlas. The inverse of transformation matrix is used to map ROI (extracted based on Atlas) onto the image. The image is cropped and resampled from voxel spacing of n1xn2xn3 to m1xm2xm3.  Options for BRAINSfit algorithm and resampling can be found at the beginning of the code.
+Registration of volume node ona reference Atlas image using [BRAINSFit algorithm](https://slicer.readthedocs.io/en/latest/user_guide/modules/brainsfit.html). The reference atlas used in the code can be found [here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7274757/). Firstly, a transformation matrix is calculated to map image onto Atlas. The inverse of transformation matrix is used to map ROI (extracted based on Atlas) onto the image. The image is cropped and resampled from voxel spacing of n1xn2xn3 to m1xm2xm3.  Options for BRAINSfit algorithm and resampling can be found at the beginning of the code.
   ![Image1](Documentation/Brainsfit_crop_resample.png)
   
 📜 [N4ITKbias.py](https://github.com/munjalshah94/3DSlicer-Python/blob/main/N4ITKBias/N4ITKbias.py)
@@ -29,6 +29,8 @@ Registration of volume node ona reference Atlas image using BRAINSFit algorithm.
 Performs batch image bias correction using N4 algorithm. This module is based on the ITK filters.   
 
 📜 [Resample_crop_Two_modalities_segmentations.py](https://github.com/munjalshah94/3DSlicer-Python/blob/main/Two_Modalities/Resample_crop_Two_modalities_segmentations.py)
+
+Executes batch resampling and cropping between two image modalities of same pateint or case. The code can be used in the the scenario of mutiple image modalities were present (diseases like ICAD and Aneurysm) with different volume extent. The volumes are cropped based on smaller volume extent modality and resample based on any of the given image modality.
 
 ## Running-code
 - Locate the python icon in your slicer GUI.
