@@ -1,6 +1,6 @@
 # Wiki and FAQs
 
-###How to add custom ROI based on a reference volume?
+### How to add custom ROI based on a reference volume?
 - If the ROI is to be extracted based on a reference image and varies for each case, it can be changed in each loop using this snippet. 
 
 ```     referenceVolume=slicer.util.loadVolume(filename)  #put path of reference filename here .nrrd, .nii, or .nii.gz
@@ -26,7 +26,7 @@
         cropVolumeLogic.Apply(cropVolumeNode)
         slicer.util.saveNode(croppedvolume,OutVolumefilename)
 ```
-###How to crop segmentations?
+### How to crop segmentations?
 
 	There are mutiple ways to crop volume as can be found here in implementaion of [CropVolumeLogic](https://github.com/Slicer/Slicer/blob/main/Modules/Loadable/CropVolume/Logic/vtkSlicerCropVolumeLogic.h).
 
@@ -57,4 +57,4 @@
 
 ### How to export volume nodes and what formats are supported?
 
-	You
+	You can export any volumenode using ``` [slicer.util.saveNode](https://slicer.readthedocs.io/en/latest/developer_guide/slicer.html#slicer.util.saveNode)(node, filename, properties={}) ```. Where, filename is path with the appropriate file extension. For example; 'pathtofile/folder1/CTA.nii'. You can export the node to any format supported by slicer. 
