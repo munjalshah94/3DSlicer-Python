@@ -63,5 +63,7 @@ Where, inputs are defined as;
 ### How to export volume nodes and what formats are supported?
 
 You can export any volumenode using [slicer.util.saveNode](https://slicer.readthedocs.io/en/latest/developer_guide/slicer.html#slicer.util.saveNode) command. 
-slicer.util.saveNode(node, filename, properties={}) 
+```python
+	slicer.util.saveNode(node, filename, properties={}) 
+```
 Where, filename is path with the appropriate file extension. For example; 'pathtofile/folder1/CTA.nii'. You can export the node to any format supported by slicer. 
