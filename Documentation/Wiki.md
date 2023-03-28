@@ -29,33 +29,33 @@
 ```
 ### How to crop segmentations?
 
-	<pre>There are mutiple ways to crop volume as can be found here in implementaion of [CropVolumeLogic](https://github.com/Slicer/Slicer/blob/main/Modules/Loadable/CropVolume/Logic/vtkSlicerCropVolumeLogic.h).
+	There are mutiple ways to crop volume as can be found here in implementaion of [CropVolumeLogic](https://github.com/Slicer/Slicer/blob/main/Modules/Loadable/CropVolume/Logic/vtkSlicerCropVolumeLogic.h).
 
-	- To crop input volume using the specified ROI node. Default interpolation algorithm is linear</pre>
+	- To crop input volume using the specified ROI node. Default interpolation algorithm is linear
 	
-```python
+
 cropVolumeNode.SetROINodeID(roiNode.GetID())   
 cropVolumeLogic3.Apply(croppedvolume) 
-```
+
   	- To perform non-interpolated (voxel-based) cropping.
 	
-```python  
+
 cropVolumeLogic3.CropVoxelBased(roiNode, inputVolume, croppedvolume,'false',0.0)
-```
+
 
 Where, inputs are defined as;
 
-```python
+
 CropVoxelBased(roi, inputVolume,outputNode,limitToInputExtent=true, fillValue=0.0) 
-```
+
   	- To crop with an interpolation algorithm
-```python   
+ 
 cropVolumeLogic3.CropInterpolated(roiNode, inputVolume, croppedvolume,False,1,1,0) 
-```
+
 	 Where, inputs are defined as;
-```python   
+  
 CropInterpolated(roi,inputVolume,outputNode,isotropicResampling=False, spacingScale, interpolationMode,fillValue) 
-```
+
 	
 
 ### How to export volume nodes and what formats are supported?
