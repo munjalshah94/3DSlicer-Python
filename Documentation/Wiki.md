@@ -37,26 +37,25 @@
 cropVolumeNode.SetROINodeID(roiNode.GetID())   
 cropVolumeLogic3.Apply(croppedvolume) 
 ```
-
   	- To perform non-interpolated (voxel-based) cropping.
 	
-	
-```  
+```python  
 cropVolumeLogic3.CropVoxelBased(roiNode, inputVolume, croppedvolume,'false',0.0)
 ```
-	 Where, inputs are defined as;
-	  ```	
-	  CropVoxelBased(roi, inputVolume,outputNode,limitToInputExtent=true, fillValue=0.0) 
-	  ```
-  
+
+Where, inputs are defined as;
+
+```python
+CropVoxelBased(roi, inputVolume,outputNode,limitToInputExtent=true, fillValue=0.0) 
+```
   	- To crop with an interpolation algorithm
-  ```   
-  cropVolumeLogic3.CropInterpolated(roiNode, inputVolume, croppedvolume,False,1,1,0) 
-  ```
+```python   
+cropVolumeLogic3.CropInterpolated(roiNode, inputVolume, croppedvolume,False,1,1,0) 
+```
 	 Where, inputs are defined as;
-	  ```   
-	  CropInterpolated(roi,inputVolume,outputNode,isotropicResampling=False, spacingScale, interpolationMode,fillValue) 
-	  ```
+```python   
+CropInterpolated(roi,inputVolume,outputNode,isotropicResampling=False, spacingScale, interpolationMode,fillValue) 
+```
 	
 
 ### How to export volume nodes and what formats are supported?
