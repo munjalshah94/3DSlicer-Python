@@ -29,9 +29,9 @@
 ```
 ### How to crop segmentations?
 
-	There are mutiple ways to crop volume as can be found here in implementaion of [CropVolumeLogic](https://github.com/Slicer/Slicer/blob/main/Modules/Loadable/CropVolume/Logic/vtkSlicerCropVolumeLogic.h).
+	<pre>There are mutiple ways to crop volume as can be found here in implementaion of [CropVolumeLogic](https://github.com/Slicer/Slicer/blob/main/Modules/Loadable/CropVolume/Logic/vtkSlicerCropVolumeLogic.h).
 
-	- To crop input volume using the specified ROI node. Default interpolation algorithm is linear
+	- To crop input volume using the specified ROI node. Default interpolation algorithm is linear</pre>
 	
 ```python
 cropVolumeNode.SetROINodeID(roiNode.GetID())   
