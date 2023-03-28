@@ -29,15 +29,15 @@
 ```
 ### How to crop segmentations?
 
-	There are mutiple ways to crop volume as can be found here in implementaion of [CropVolumeLogic](https://github.com/Slicer/Slicer/blob/main/Modules/Loadable/CropVolume/Logic/vtkSlicerCropVolumeLogic.h).
+There are mutiple ways to crop volume as can be found here in implementaion of [CropVolumeLogic](https://github.com/Slicer/Slicer/blob/main/Modules/Loadable/CropVolume/Logic/vtkSlicerCropVolumeLogic.h).
 
-	- To crop input volume using the specified ROI node. Default interpolation algorithm is linear
+- To crop input volume using the specified ROI node. Default interpolation algorithm is linear
 	
 
 cropVolumeNode.SetROINodeID(roiNode.GetID())   
 cropVolumeLogic3.Apply(croppedvolume) 
 
-  	- To perform non-interpolated (voxel-based) cropping.
+- To perform non-interpolated (voxel-based) cropping.
 	
 
 cropVolumeLogic3.CropVoxelBased(roiNode, inputVolume, croppedvolume,'false',0.0)
@@ -48,11 +48,11 @@ Where, inputs are defined as;
 
 CropVoxelBased(roi, inputVolume,outputNode,limitToInputExtent=true, fillValue=0.0) 
 
-  	- To crop with an interpolation algorithm
+- To crop with an interpolation algorithm
  
 cropVolumeLogic3.CropInterpolated(roiNode, inputVolume, croppedvolume,False,1,1,0) 
 
-	 Where, inputs are defined as;
+Where, inputs are defined as;
   
 CropInterpolated(roi,inputVolume,outputNode,isotropicResampling=False, spacingScale, interpolationMode,fillValue) 
 
@@ -60,6 +60,6 @@ CropInterpolated(roi,inputVolume,outputNode,isotropicResampling=False, spacingSc
 
 ### How to export volume nodes and what formats are supported?
 
-	You can export any volumenode using [slicer.util.saveNode](https://slicer.readthedocs.io/en/latest/developer_guide/slicer.html#slicer.util.saveNode) command. 
-	``` slicer.util.saveNode(node, filename, properties={}) ``` 
-	Where, filename is path with the appropriate file extension. For example; 'pathtofile/folder1/CTA.nii'. You can export the node to any format supported by slicer. 
+You can export any volumenode using [slicer.util.saveNode](https://slicer.readthedocs.io/en/latest/developer_guide/slicer.html#slicer.util.saveNode) command. 
+slicer.util.saveNode(node, filename, properties={}) 
+Where, filename is path with the appropriate file extension. For example; 'pathtofile/folder1/CTA.nii'. You can export the node to any format supported by slicer. 
