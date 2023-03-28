@@ -35,7 +35,10 @@
 cropVolumeNode.SetROINodeID(roiNode.GetID())   
 cropVolumeLogic3.Apply(croppedvolume) 
 ```
+
   	- To perform non-interpolated (voxel-based) cropping.
+	
+	
 ```  
 cropVolumeLogic3.CropVoxelBased(roiNode, inputVolume, croppedvolume,'false',0.0)
 ```
