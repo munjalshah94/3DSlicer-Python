@@ -26,7 +26,7 @@ Registration of volume node ona reference Atlas image using [BRAINSFit algorithm
   
 📜 [N4ITKbias.py](https://github.com/munjalshah94/3DSlicer-Python/blob/main/N4ITKBias/N4ITKbias.py)
 
-Performs batch image bias correction using N4 algorithm. This module is based on the ITK filters.   
+Performs batch image bias correction using N4 algorithm. 
 
 📜 [Resample_crop_Two_modalities_segmentations.py](https://github.com/munjalshah94/3DSlicer-Python/blob/main/Two_Modalities/Resample_crop_Two_modalities_segmentations.py)
 
