@@ -45,9 +45,9 @@ There are mutiple ways to crop volume as can be found here in implementaion of [
 
 Where, inputs are defined as;
 
-
-CropVoxelBased(roi, inputVolume,outputNode,limitToInputExtent=true, fillValue=0.0) 
-
+```python
+	CropVoxelBased(roi, inputVolume,outputNode,limitToInputExtent=true, fillValue=0.0) 
+```
 - To crop with an interpolation algorithm
  
 cropVolumeLogic3.CropInterpolated(roiNode, inputVolume, croppedvolume,False,1,1,0) 
