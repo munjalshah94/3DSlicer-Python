@@ -33,10 +33,10 @@ There are mutiple ways to crop volume as can be found here in implementaion of [
 
 - To crop input volume using the specified ROI node. Default interpolation algorithm is linear
 	
-
-cropVolumeNode.SetROINodeID(roiNode.GetID())   
-cropVolumeLogic3.Apply(croppedvolume) 
-
+```python
+	cropVolumeNode.SetROINodeID(roiNode.GetID())   
+	cropVolumeLogic3.Apply(croppedvolume) 
+```
 - To perform non-interpolated (voxel-based) cropping.
 	
 
