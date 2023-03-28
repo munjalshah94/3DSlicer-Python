@@ -29,7 +29,7 @@ Performs batch image bias correction using N4 algorithm.
 
 📜 [Resample_crop_Two_modalities_segmentations.py](https://github.com/munjalshah94/3DSlicer-Python/blob/main/Two_Modalities/Resample_crop_Two_modalities_segmentations.py)
 
-Executes batch resampling and cropping between two image modalities of same pateint or case. The code can be used in the the scenario of mutiple image modalities were present (diseases like ICAD and Aneurysm) with different volume extent. The volumes are cropped based on smaller volume extent modality and resample based on any of the given image modality.
+Executes batch resampling and cropping between two image modalities of same pateint or case. The code can be used in the the scenario of mutiple image modalities were present (diseases like ICAD and Aneurysm) with different volume extent. The volumes are cropped based on smaller volume extent and resample based on given image modality.
 
 ## Running-code
 - Locate the python icon in your slicer GUI.
