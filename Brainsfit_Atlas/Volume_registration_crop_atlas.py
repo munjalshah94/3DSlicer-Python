@@ -117,7 +117,7 @@ def Register(Fixedfilename,Movingfilename,roi_name,segmodelname,OutVolumefilenam
         logic2 = slicer.vtkSlicerTransformLogic()
         logic2.hardenTransform(roi_atlas)
         
-        print('Resampleing the image for voxel sapcing - ',VOXEL_SPACING )
+        print('Resampling the image for voxel spacing - ',VOXEL_SPACING )
         
         #Resample image
         orig2=slicer.util.loadVolume(Movingfilename)
