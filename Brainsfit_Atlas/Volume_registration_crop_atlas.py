@@ -48,7 +48,7 @@ def BatchRegister2():
     folder_names = glob.glob(r'path_to_code\original\*')
     current_folder= r'D:\Github_Data/test'
     Fixedfilename=current_folder + "/Reference/Atlas.nrrd"
-    roi_name=current_folder + "./Reference/ROI.mrk.json"
+    roi_name=current_folder + "/Reference/ROI.mrk.json"
     
     output_folder= current_folder+'/output'
     isExist = os.path.exists(output_folder)
