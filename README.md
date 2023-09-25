@@ -86,7 +86,7 @@ The python codes were tested and implemented on ```3D slicer 5.0.3 (r30893/7ea0f
 - [API](https://slicer.readthedocs.io/en/latest/developer_guide/slicer.html) ```slicer.util and slicer.logic``` are most frequently used for volume operations. 
 - [Script-repository](https://slicer.readthedocs.io/en/latest/developer_guide/script_repository.html)
 ## How-to-cite
--  Patel, T.R., Patel, A., Veeturi, S.S., Shah, M., Waqas, M., Monteiro, A., Baig, A.A., Pinter, N., Levy, E.I., Siddiqui, A.H. and Tutino, V.M., 2023. Evaluating a 3D deep learning pipeline for cerebral vessel and intracranial aneurysm segmentation from computed tomography angiography–digital subtraction angiography image pairs. Neurosurgical Focus, 54(6), p.E13. [Link to Paper](https://doi.org/10.3171/2023.3.FOCUS2374) https://doi.org/10.3171/2023.3.FOCUS2374
+-  Patel, T.R., Patel, A., Veeturi, S.S., Shah, M., Waqas, M., Monteiro, A., Baig, A.A., Pinter, N., Levy, E.I., Siddiqui, A.H. and Tutino, V.M., 2023. Evaluating a 3D deep learning pipeline for cerebral vessel and intracranial aneurysm segmentation from computed tomography angiography–digital subtraction angiography image pairs. Neurosurgical Focus, 54(6), p.E13. https://doi.org/10.3171/2023.3.FOCUS2374
 ## Wiki-FAQs
 Additonal codes, tips and tricks can be found here in our repo!! [Wiki and FAQs!](https://github.com/munjalshah94/3DSlicer-Python/blob/main/Documentation/Wiki.md)
 
