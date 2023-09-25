@@ -86,8 +86,7 @@ The python codes were tested and implemented on ```3D slicer 5.0.3 (r30893/7ea0f
 - [API](https://slicer.readthedocs.io/en/latest/developer_guide/slicer.html) ```slicer.util and slicer.logic``` are most frequently used for volume operations. 
 - [Script-repository](https://slicer.readthedocs.io/en/latest/developer_guide/script_repository.html)
 ## How-to-cite
--  Tatsat Patel, Aakash Patel, Sricharan S. Veeturi,  Munjal Shah,Muhammad Waqas, Andre Monteiro, Ammad A. Baig, Nandor Pinter, Elad I. Levy, Adnan H. Siddiqui, and Vincent M. Tutino, "Evaluating a 3D deep learning pipeline for cerebral vessel and intracranial aneurysm segmentation from computed tomography angiography–digital subtraction angiography image pairs" World Neurosurgery (2023).
-- Tatsat Patel, Munjal Shah, Sricharan S. Veeturi, Andre Monteiro, Adnan H. Siddiqui, and Vincent M. Tutino. "Effect of Inter-User Segmentation Differences on Ischemic Stroke Radiomics from CTA and NCCT." In 2022 IEEE Western New York Image and Signal Processing Workshop (WNYISPW), pp. 1-5. IEEE, 2022. [Link](https://ieeexplore.ieee.org/abstract/document/9983487)
+-  Patel, T.R., Patel, A., Veeturi, S.S., Shah, M., Waqas, M., Monteiro, A., Baig, A.A., Pinter, N., Levy, E.I., Siddiqui, A.H. and Tutino, V.M., 2023. Evaluating a 3D deep learning pipeline for cerebral vessel and intracranial aneurysm segmentation from computed tomography angiography–digital subtraction angiography image pairs. Neurosurgical Focus, 54(6), p.E13. [Link to Paper](https://doi.org/10.3171/2023.3.FOCUS2374) https://doi.org/10.3171/2023.3.FOCUS2374
 ## Wiki-FAQs
 Additonal codes, tips and tricks can be found here in our repo!! [Wiki and FAQs!](https://github.com/munjalshah94/3DSlicer-Python/blob/main/Documentation/Wiki.md)
 
